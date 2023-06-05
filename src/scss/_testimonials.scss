@@ -1,0 +1,90 @@
+.testimonials {
+    background: url('../../dist/img/testmonials-bg.png') center/cover no-repeat;
+    height: 100%;
+    padding: 108px 0 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+
+    @include _992 {
+        padding-top: 86px;
+    }
+
+    .section-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        color: $main-color-light;
+
+        @include _992 {
+            font-size: 42px;
+            line-height: 44px;
+        }
+
+        @include _480 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 108px 120px;
+        margin-top: 84px;
+        align-items: end;
+
+        @include _992 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 54px 94px;
+        }
+
+        @include _768 {
+            gap: 54px 54px;
+        }
+
+        @include _480 {
+            grid-template-columns: 1fr;
+            gap: 54px 0px;
+            margin-top: 53px;
+            padding: 0 25px;
+        }
+
+        .testimonials-item__text {
+            margin-top: 30px;
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $main-color-light;
+        }
+    }
+
+    .testimonials-note {
+        margin: 85px auto 0px;
+        max-width: 886px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #A291A5;
+
+        @include _992 {
+            margin: 66px auto 0px;
+            padding: 0 26px;
+        }
+    }
+
+    .separator {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 72%;
+        height: 2px;        
+        background: #645766;
+        margin: auto;
+    }
+}
