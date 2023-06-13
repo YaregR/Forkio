@@ -40,6 +40,7 @@
             .header__logo {
                 display: flex;
                 align-items: center;
+                text-decoration: none;
 
                 &:hover .logo__title {
                     color: $main-color-light;
@@ -137,6 +138,10 @@
                     align-items: center;
                     margin: 0 23px;
 
+                    @include _642 {
+                        margin: 0;
+                    }
+
                     @include _480 {
                         display: block;
                         position: fixed;
@@ -166,6 +171,10 @@
                             margin: 0 23px;
                         }
 
+                        @include _642 {
+                            margin: 0 13px;
+                        }
+
                         @include _480 {
                             margin: 0;
                             text-align: left;
@@ -178,6 +187,7 @@
                         a {
                             text-decoration: none;
                             color: $main-color-dark;
+                            white-space: nowrap;
 
                             &:hover {
                                 color: $main-color-light;
